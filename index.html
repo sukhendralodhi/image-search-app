@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search image - what do you love?</title>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-3xl text-center mt-6 mb-8 font-bold underline underline-offset-8">Image Search App</h1>
+    <form class="flex justify-center items-center flex-col space-y-4 mb-8 sm:flex-row sm:space-y-0 sm:space-x-4">
+        <input id="search-input"
+            class="border-2 border-gray-400 rounded outline-none py-1 w-3/5 max-w-md placeholder:px-4 sm:mx-4"
+            type="text" placeholder="Serch for image...">
+        <button
+            class="m-0 bg-gray-400 px-4 py-1 rounded border-2 border-gray-400 transition-all duration-100 delay-100 hover:bg-gray-200 "
+            id="search-btn">Search</button>
+    </form>
+
+
+    <div id="result" class="flex flex-wrap space-x-4 justify-center w-full px-4 sm:px-0 md:px-0 xl:px-0 2xl:px-0">
+
+        <!-- your data goes here  -->
+
+    </div>
+    <button id="show-more"
+        class="bg-blue-400 px-4 py-1 text-white text-center mx-auto block rounded transition-all duration-100 delay-100 ease-in-out my-4 hover:bg-blue-600 invisible">Show
+        More</button>
+
+        <!-- JavaScript  -->
+        <script src="app.js"></script>
+</body>
+
+</html>
